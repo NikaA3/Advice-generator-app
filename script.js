@@ -10,7 +10,7 @@ function getAdvice() {
     .then((data) => {
       let id = `${data.slip.id}`;
       let output = `${data.slip.advice}`;
-      console.log(data.slip.advice);
+      
       document.querySelector(".title").innerHTML = `Advice #  ${id}`;
       document.querySelector(".advice").innerHTML = output;
     });
